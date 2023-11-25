@@ -1,27 +1,24 @@
-import Image from 'next/image'
-
-export default function Home() {
-  return (
-<body>
-    
-    {/* <!-- Created BY - Sagar Developer --> */}
-    <section className="header">
+import Link from "next/link"
+function Home(){
+  return(
+    <div>
+      <section className="header">
         <nav>
-            <a href="index.html" className="logo">Xplore
-                <i className="fab fa-staylinked"></i>kill
-            </a>
+            <Link href="/" className="logo">Xplore
+                <i className="fab fa-staylinked"></i>Skill
+            </Link>
             <div className="nav-links" id="navLinks">
                 {/* <!-- Reposnive bar open and close --> */}
-                <i className="fa fa-times" ></i>
+                {/* <i className="fa fa-times" onclick="hideMenu()"></i> */}
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="course.html">Course</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><Link href="/">Home</Link></li>
+                    <li><Link href="/Course">Course</Link></li>
+                    <li><Link href="/Blog">Blog</Link></li>
+                    <li><Link href="/About">About</Link></li>
+                    <li><Link href="/Contact">Contact</Link></li>
                 </ul>
             </div>
-            <i className="fa fa-bars" ></i>
+            {/* <i className="fa fa-bars" onclick="showMenu()"></i> */}
             {/* <!-- Reposnive bar open and close --> */}
         </nav>
 
@@ -29,11 +26,10 @@ export default function Home() {
             <h2>GET READY</h2>
             <p id="headtext">TO DISCOVER CAMPUS</p>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit consequuntur corrupti sapiente aut porro
-                <br /> esse blanditiis in quae perspiciatis quo.
+                <br/> esse blanditiis in quae perspiciatis quo.
             </p>
             <a href="#" className="hero_btn">Visit Us To Know More</a>
         </div>
-       
     </section>
 
     {/* <!-- Course Section Start --> */}
@@ -42,7 +38,7 @@ export default function Home() {
             <div className="verticalLine"></div>
             <div className="Clear"></div>
         </div>
-        <h1>EXPLORE OUR 60+ <br /> MAJOR PROGRAMS</h1>
+        <h1>EXPLORE OUR 60+ <br/> MAJOR PROGRAMS</h1>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
 
         <div className="row">
@@ -80,19 +76,19 @@ export default function Home() {
 
         <div className="row">
             <div className="campus-col">
-                <img src="img/Campus1.png" alt=""></img>
+                <img src="img/Campus1.png" alt=""/>
                 <div className="layer">
                     <h3>DELHI</h3>
                 </div>
             </div>
             <div className="campus-col">
-                <img src="img/Campus2.png" alt=""></img>
+                <img src="img/Campus2.png" alt=""/>
                 <div className="layer">
                     <h3>HYDERABAD</h3>
                 </div>
             </div>
             <div className="campus-col">
-                <img src="img/Campus3.png" alt=""></img>
+                <img src="img/Campus3.png" alt=""/>
                 <div className="layer">
                     <h3>MUMBAI</h3>
                 </div>
@@ -112,19 +108,19 @@ export default function Home() {
 
         <div className="row">
             <div className="facilities-col">
-                <img src="img/libary.png" alt=""></img>
+                <img src="img/libary.png" alt=""/>
                 <h3>Best Libary</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio omnis asperiores atque aperiam.
                 </p>
             </div>
             <div className="facilities-col">
-                <img src="img/playground.png" alt=""></img>
+                <img src="img/playground.png" alt=""/>
                 <h3>Athletics</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio omnis asperiores atque aperiam.
                 </p>
             </div>
             <div className="facilities-col">
-                <img src="img/food.png" alt=""></img>
+                <img src="img/food.png" alt=""/>
                 <h3>Tasty and Healthy Food</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio omnis asperiores atque aperiam.
                 </p>
@@ -144,7 +140,7 @@ export default function Home() {
 
         <div className="row">
             <div className="testimonials-col">
-                <img src="img/user.png" alt="oo.."></img>
+                <img src="img/user.png" alt="oo.."/>
                 <div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi maiores in nostrum rerum voluptatem
                         praesentium veritatis alias omnis voluptate nisi aperiam, voluptatum quibusdam itaque a
@@ -158,7 +154,7 @@ export default function Home() {
                 </div>
             </div>
             <div className="testimonials-col">
-                <img src="img/user.png" alt="oo.."></img>
+                <img src="img/user.png" alt="oo.."/>
                 <div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi maiores in nostrum rerum voluptatem
                         praesentium veritatis alias omnis voluptate nisi aperiam, voluptatum quibusdam itaque a
@@ -178,32 +174,28 @@ export default function Home() {
     {/* <!-- Call To Action Section Start --> */}
     <section className="cta">
         <h1>GET READY FOR A BRIGHT FUTURE</h1>
-        <a href="contact.html" className="hero_btn">CONTACT US</a>
+        <Link href="/Contact" className="hero_btn">CONTACT US</Link>
     </section>
     {/* <!-- Call To Action Section End --> */}
 
     {/* <!-- Footer Section Start --> */}
     <section className="footer">
-        <hr />
+        <hr/>
         <h4>About Us</h4>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse minima incidunt odio nam facilis, eligendi
             Itaque fugiat cupiditate consectetur. Aliquid ab deserunt exercitationem, illum molestiae dolorem.
         </p>
-
         <div className="icons">
             <i className="fab fa-facebook-f"></i>
             <i className="fab fa-instagram"></i>
             <i className="fab fa-twitter"></i>
             <i className="fab fa-linkedin"></i>
         </div>
-        <p>Made with <i className="fas fa-heart"></i> by <a href="index.html">Sagar Developer</a></p>
-        <p>Copyright © 2021 <a href="index.html">Xplore Skill</a>. All Rights Reserved</p>
+        <p>Made with <i className="fas fa-heart"></i> by <Link href="/">Faizi Developer</Link></p>
+        <p>Copyright © 2021 <Link href="/">Xplore Skill</Link>. All Rights Reserved</p>
     </section>
     {/* <!-- Footer Section End --> */}
-
-    <script src="script.js"></script>
-</body>
-
-
+    </div>
   )
 }
+export default Home
